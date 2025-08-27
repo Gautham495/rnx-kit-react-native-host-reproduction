@@ -18,7 +18,7 @@ const AppClip = () => (
         margin: 10,
         textAlign: 'center',
       }}>
-      Hello,
+      Hello
     </Text>
     <Text
       style={{
