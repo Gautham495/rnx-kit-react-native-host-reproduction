@@ -9,6 +9,19 @@
 		<key>NSAppClipRequestLocationConfirmation</key>
 		<false/>
 	</dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>RCTNewArchEnabled</key>
+	<true/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -27,17 +40,6 @@
 				</dict>
 			</array>
 		</dict>
-	</dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-			<key>NSExceptionDomains</key>
-			<dict>
-					<key>localhost</key>
-					<dict>
-							<key>NSExceptionAllowsInsecureHTTPLoads</key>
-							<true/>
-					</dict>
-			</dict>
 	</dict>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

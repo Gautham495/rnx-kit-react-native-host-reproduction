@@ -14,8 +14,15 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
+ENV['RCT_NEW_ARCH_ENABLED'] = '1'
+# ENV['RCT_USE_RN_DEP'] = '1'
+# ENV['RCT_USE_PREBUILT_RNCORE'] = '1'
+ENV['USE_CCACHE'] = '0'
+
 target 'RNAppClip' do
   config = use_native_modules!
+
+  use_frameworks! :linkage => :static
 
   # Auto linking is broken on this package
   # https://github.com/microsoft/rnx-kit/issues/3208
@@ -23,9 +30,12 @@ target 'RNAppClip' do
 
   use_react_native!(
     :path => config[:reactNativePath],
-    # An absolute path to your application root.
+    :hermes_enabled => true,
+    :fabric_enabled => true,
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+
+  pod 'nanopb', :modular_headers => true
 
   target 'RNAppClipTests' do
     inherit! :complete
