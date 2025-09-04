@@ -8,26 +8,26 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 USE_BRIDGELESS=1 bundle exec pod install"
+    "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 USE_BRIDGELESS=0 bundle exec pod install"
   },
   "dependencies": {
     "react": "19.1.0",
     "react-native": "0.81.1",
-    "@react-native-firebase/app": "^21.14.0",
-    "@react-native-firebase/app-check": "^21.14.0",
-    "@react-native-firebase/auth": "^21.14.0",
-    "@react-native-firebase/crashlytics": "^21.14.0",
-    "@react-native-firebase/firestore": "^21.14.0",
-    "@react-native-firebase/messaging": "^21.14.0",
-    "@react-native-firebase/storage": "^21.14.0"
+    "@react-native-firebase/app": "^23.3.0",
+    "@react-native-firebase/app-check": "^23.3.0",
+    "@react-native-firebase/auth": "^23.3.0",
+    "@react-native-firebase/crashlytics": "^23.3.0",
+    "@react-native-firebase/firestore": "^23.3.0",
+    "@react-native-firebase/messaging": "^23.3.0",
+    "@react-native-firebase/storage": "^23.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
-    "@react-native-community/cli": "^20.0.0",
-    "@react-native-community/cli-platform-android": "20.0.0",
-    "@react-native-community/cli-platform-ios": "20.0.0",
+    "@react-native-community/cli": "^20.0.1",
+    "@react-native-community/cli-platform-android": "20.0.1",
+    "@react-native-community/cli-platform-ios": "20.0.1",
     "@react-native/babel-preset": "0.81.1",
     "@react-native/eslint-config": "0.81.1",
     "@react-native/metro-config": "0.81.1",
