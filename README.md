@@ -1,3 +1,7 @@
+## Update
+
+This issue has been fixed and I got my app-clip working!
+
 Current:
 Repo updated for this new issue: https://github.com/microsoft/rnx-kit/issues/3755
 
